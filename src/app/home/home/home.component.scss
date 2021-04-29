@@ -57,22 +57,26 @@
     }
 
     .footer {
-      border-top: 1px solid gray;
+      // border-top: 1px solid gray;
       height: 70px;
       padding: 0 60px;
-    }
+      a {
+        font-family: "Poppins", Helvetica, sans-serif;
+        color: gray;
+        text-decoration: none;
+        font-size: 16px;
+        margin-left: 5px;
 
-    a {
-      font-family: "Poppins", Helvetica, sans-serif;
-      color: gray;
-      text-decoration: none;
-      font-size: 16px;
-      margin-left: 5px;
-    }
+        &:hover {
+          color: lightgray;
+          cursor: pointer;
+        }
+      }
 
-    img {
-      height: 16px;
-      width: 16px;
+      img {
+        height: 16px;
+        width: 16px;
+      }
     }
   }
 }

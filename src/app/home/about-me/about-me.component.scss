@@ -1,21 +1,55 @@
 .container {
   height: 100%;
 
+  .image {
+    border: 5px solid gray;
+    border-radius: 50%;
+  }
   img {
     height: 210px;
     width: 210px;
+    border-radius: 50%;
   }
 
   .info {
     height: 210px;
-    
-    h2,
-    p {
+
+    h2 {
       margin: 0;
+      font-size: 34px;
     }
 
     p {
+      margin: 0;
       width: 400px;
+      color: lightgray;
+      font-weight: 300;
+    }
+
+    button {
+      width: 120px;
+      border-radius: 8px;
+    }
+
+    #cv {
+      color: #fff;
+      background-color: #222;
+      border: 2px solid #007ced;
+
+      &:hover {
+        background-color: #007ced;
+      }
+    }
+
+    #contacts {
+      color: #fff;
+      background-color: #222;
+      border: 2px solid lightgray;
+
+      &:hover {
+        background-color: lightgray;
+        color: #222;
+      }
     }
   }
 }

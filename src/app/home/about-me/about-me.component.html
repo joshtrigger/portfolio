@@ -1,12 +1,19 @@
-<div class="container" fxLayoutAlign="center center">
+<div class="container" fxLayoutAlign="center center" fxLayoutGap="20px">
   <div class="info" fxLayout="column" fxLayoutAlign="space-between start">
     <h2>Web Developer</h2>
     <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore repellat
-      iusto ducimus vel ab quos a. Beatae non doloribus corrupti repudiandae
-      commodi aliquam laudantium ipsum sed. Alias temporibus numquam quos.
+      Hi, my name is Joshua. I'm a Web / Front-end Developer living in Uganda
+      who is looking to master his craft as a developer. I design single page
+      applications usually with Angular.
     </p>
-    <button mat-flat-button>Download CV</button>
+    <div class="btns" fxLayoutAlign="space-between start" fxLayoutGap="20px">
+      <button id="cv" mat-flat-button>Download CV</button>
+      <button id="contacts" mat-flat-button routerLink="/contacts">
+        Contact
+      </button>
+    </div>
   </div>
-  <img src="/assets/images/joshua.jpg" alt="" srcset="" />
+  <div class="image" fxLayoutAlign="center center">
+    <img src="/assets/images/joshua.jpg" alt="" srcset="" />
+  </div>
 </div>
