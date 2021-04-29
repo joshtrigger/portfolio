@@ -1,0 +1,21 @@
+.container {
+  height: 100%;
+
+  img {
+    height: 210px;
+    width: 210px;
+  }
+
+  .info {
+    height: 210px;
+    
+    h2,
+    p {
+      margin: 0;
+    }
+
+    p {
+      width: 400px;
+    }
+  }
+}
