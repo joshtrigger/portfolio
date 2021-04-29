@@ -1,0 +1,27 @@
+<div class="content" fxLayoutAlign="center center">
+  <mat-card fxLayout="column" fxLayoutAlign="space-between center">
+    <div class="header" fxLayoutAlign="space-between center">
+      <div class="name" fxLayoutAlign="space-between center">
+        <ngx-avatar name="Joshua Lugada" bgColor="#007ced"></ngx-avatar>
+        <p>Joshua Lugada</p>
+      </div>
+      <div class="nav" fxLayoutAlign="space-between center">
+        <p routerLink="about-me" routerLinkActive="nav-active">About me</p>
+        <p routerLink="resume" routerLinkActive="nav-active">Resume</p>
+        <p routerLink="contacts" routerLinkActive="nav-active">Contact</p>
+      </div>
+    </div>
+    <div class="details">
+      <router-outlet></router-outlet>
+    </div>
+    <div class="footer" fxLayoutAlign="start center">
+      <img src="/assets/images/linkedin.png" alt="linkedin-logo" srcset="" />
+      <a
+        href="https://www.linkedin.com/in/joshua-lugada-67a31016a/"
+        target="_blank"
+      >
+        linkedin
+      </a>
+    </div>
+  </mat-card>
+</div>
