@@ -1,0 +1,66 @@
+.resume {
+  height: 100%;
+  padding: 60px;
+
+  .left,
+  .right {
+    width: 40%;
+
+    h2 {
+      color: #007ced;
+      font-weight: 500;
+      margin: 10px 0;
+    }
+
+    .work-experience {
+      h3,
+      h4,
+      div,
+      span,
+      ul {
+        margin: 4px 0;
+      }
+
+      h3 {
+        font-weight: 500;
+      }
+
+      h4 {
+        font-weight: 400;
+      }
+
+      span {
+        font-style: italic;
+        font-size: 14px;
+        font-weight: 300;
+        color: lightgray;
+      }
+
+      .dates {
+        span {
+          font-style: italic;
+          font-size: 14px;
+          font-weight: 300;
+          color: darkgray;
+        }
+      }
+
+      ul {
+        li {
+          font-size: 14px;
+          font-weight: 300;
+          color: #fff;
+        }
+      }
+    }
+
+    .skills {
+      .skill {
+        width: fit-content;
+        background-color: #007ced;
+        padding: 6px;
+        border-radius: 4px;
+      }
+    }
+  }
+}
