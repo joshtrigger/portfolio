@@ -10,6 +10,7 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { ResumeComponent } from './resume/resume.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { MatButtonModule } from '@angular/material/button';
     AvatarModule,
     MatCardModule,
     MatButtonModule,
+    MatIconModule,
   ],
 })
 export class HomeModule {}
