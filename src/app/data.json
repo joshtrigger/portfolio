@@ -1,5 +1,89 @@
 {
   "name": "Joshua Lugada",
-  "bio":"",
-  "education":{}
+  "bio": "",
+  "education": {
+    "course": "bsc. computer science",
+    "institution": "makerere university",
+    "location": "kampala, uganda",
+    "from": "08/2014",
+    "to": "01/2019"
+  },
+  "skills": [
+    "Angular",
+    "Python",
+    "Django",
+    "Flask",
+    "Javascript",
+    "HTML5",
+    "CSS",
+    "SCSS",
+    "Docker",
+    "Node.js",
+    "Express.js",
+    "React",
+    "PostgreSQL",
+    "MongoDB",
+    "API Testing",
+    "Typescript",
+    "Heroku",
+    "Git",
+    "CI/CD",
+    "TDD",
+    "LitElement",
+    "SASS"
+  ],
+  "work": [
+    {
+      "title": "front end engineer",
+      "company": "leapa",
+      "from": "04/2020",
+      "to": "present",
+      "tasks": [
+        "Building a payment processor with Angular.",
+        "Built the user interface for a credit score monitoring system with Angular.",
+        "Building payment web component with Polymer/LitEement.",
+        "Built the user interface for a tax collection application with Angular."
+      ],
+      "location": "remote"
+    },
+    {
+      "title": "freelance front end engineer",
+      "company": "saffron",
+      "from": "04/2020",
+      "to": "05/2020",
+      "tasks": [
+        "Optimizing application and improving performance.",
+        "Fixing existing bugs in the application."
+      ],
+      "location": "remote"
+    },
+    {
+      "title": "front end engineer",
+      "company": "tulaa",
+      "from": "01/2019",
+      "to": "05/2019",
+      "tasks": [
+        "Upgraded the User Interface of the application and ultimately improved the User Experience.",
+        "Migrated project and upgraded it to Angular version 7.",
+        "Worked hand in hand with the backend team to fix bugs in order to improve the general performance of the application.",
+        "Added unit tests to the project to help with debugging."
+      ],
+      "location": "remote"
+    },
+    {
+      "title": "software engineer",
+      "company": "andela",
+      "from": "11/2018",
+      "to": "03/2020",
+      "tasks": [
+        "Built a blogging site using Python/Django for the backend and React/Redux for the frontend.",
+        "Built and maintained an Event Management application using ReactJS.",
+        "Learning facilitator for the Women in Tech leadership program.",
+        "I was the part of the team that was interviewing and assessing the company's new hires."
+      ],
+      "location": "kampala, uganda"
+    }
+  ],
+  "interests": [],
+  "projects": []
 }

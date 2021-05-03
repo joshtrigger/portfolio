@@ -1,39 +1,43 @@
 <div class="resume" fxLayoutAlign="space-between start" fxlayoutGap="40px">
   <div class="left" fxLayout="column wrap">
     <h2>WORK EXPERIENCE</h2>
-    <div class="work-experience" fxLayout="column wrap">
-      <h3>Front-end developer</h3>
-      <h4>Leapa</h4>
+    <div
+      class="work-experience"
+      fxLayout="column wrap"
+      *ngFor="let work of resume.work"
+    >
+      <h3>{{ work.title | titlecase }}</h3>
+      <h4>{{ work.company | titlecase }}</h4>
       <div class="dates" fxLayoutAlign="space-between center">
-        <span>04/2020 - Present</span>
-        <span>Remote</span>
+        <span>{{ work.from }} - {{ work.to | titlecase }}</span>
+        <span>{{ work.location | titlecase }}</span>
       </div>
-      <span>Achievement/Tasks</span>
+      <span>Achievements</span>
       <ul>
-        <li>Building something awesome</li>
-        <li>Building something awesome</li>
+        <li *ngFor="let task of work.tasks">{{ task }}</li>
       </ul>
+      <br />
     </div>
-    <br />
     <h2>EDUCATION</h2>
     <div class="work-experience" fxLayout="column wrap">
-      <h3>Front-end developer</h3>
-      <h4>Leapa</h4>
+      <h3>{{ resume.education.course | titlecase }}</h3>
+      <h4>{{ resume.education.institution | titlecase }}</h4>
       <div class="dates" fxLayoutAlign="space-between center">
-        <span>04/2020 - Present</span>
-        <span>Remote</span>
+        <span>{{ resume.education.from }} - {{ resume.education.to }}</span>
+        <span>{{ resume.education.location | titlecase }} </span>
       </div>
-      <span>Achievement/Tasks</span>
-      <ul>
-        <li>Building something awesome</li>
-        <li>Building something awesome</li>
-      </ul>
     </div>
   </div>
   <div class="right" fxLayout="column wrap">
     <h2>SKILLS</h2>
-    <div class="skills">
-      <div class="skill">Python</div>
+    <div class="skills" fxLayout="row wrap" fxLayoutGap="10px">
+      <div
+        class="skill"
+        fxLayoutAlign="center center"
+        *ngFor="let skill of resume.skills"
+      >
+        {{ skill }}
+      </div>
     </div>
     <br />
     <h2>PERSONAL PROJECTS</h2>
@@ -48,6 +52,7 @@
         <li>Building something awesome</li>
         <li>Building something awesome</li>
       </ul>
+      <br />
     </div>
   </div>
 </div>

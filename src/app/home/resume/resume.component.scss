@@ -1,6 +1,7 @@
 .resume {
   height: 100%;
   padding: 60px;
+  overflow-y: auto;
 
   .left,
   .right {
@@ -50,17 +51,36 @@
           font-size: 14px;
           font-weight: 300;
           color: #fff;
+          margin-bottom: 4px;
         }
       }
     }
 
     .skills {
+      height: 170px;
+
       .skill {
         width: fit-content;
+        height: fit-content;
         background-color: #007ced;
         padding: 6px;
         border-radius: 4px;
+        font-size: 14px;
       }
     }
   }
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #bebdbd;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 2px;
 }
