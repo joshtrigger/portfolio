@@ -85,5 +85,12 @@
     }
   ],
   "interests": [],
-  "projects": []
+  "projects": [
+    {
+      "name": "memory game",
+      "from": "03/2021",
+      "to": "present",
+      "tasks": ["Building an android game using Kotlin"]
+    }
+  ]
 }

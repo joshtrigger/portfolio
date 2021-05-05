@@ -19,7 +19,7 @@
         <span>{{ work.from }} - {{ work.to | titlecase }}</span>
         <span>{{ work.location | titlecase }}</span>
       </div>
-      <span>Achievements</span>
+      <span>Description</span>
       <ul>
         <li *ngFor="let task of work.tasks">{{ task }}</li>
       </ul>
@@ -37,10 +37,7 @@
   </div>
   <div [ngStyle.xs]="{ width: 'auto' }" class="right" fxLayout="column wrap">
     <h2>SKILLS</h2>
-    <div
-      class="skills"
-      fxLayout="row wrap"
-    >
+    <div class="skills" fxLayout="row wrap">
       <div
         class="skill"
         fxLayoutAlign="center center"
@@ -51,16 +48,18 @@
     </div>
     <br />
     <h2>PERSONAL PROJECTS</h2>
-    <div class="work-experience" fxLayout="column wrap">
-      <h4>Leapa</h4>
+    <div
+      *ngFor="let project of resume.projects"
+      class="work-experience"
+      fxLayout="column wrap"
+    >
+      <h4>{{ project.name | titlecase }}</h4>
       <div class="dates" fxLayoutAlign="space-between center">
-        <span>04/2020 - Present</span>
-        <span>Remote</span>
+        <span>{{ project.from }} - {{ project.to | titlecase }}</span>
       </div>
-      <span>Achievement/Tasks</span>
-      <ul>
-        <li>Building something awesome</li>
-        <li>Building something awesome</li>
+      <span>Description</span>
+      <ul *ngFor="let task of project.tasks">
+        <li>{{ task }}</li>
       </ul>
       <br />
     </div>
