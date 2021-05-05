@@ -57,15 +57,16 @@
     }
 
     .skills {
-      height: 170px;
+      height: auto;
 
       .skill {
         width: fit-content;
         height: fit-content;
-        background-color: #007ced;
+        border: 2px solid #007ced;
         padding: 6px;
-        border-radius: 4px;
+        border-radius: 6px;
         font-size: 14px;
+        margin: 0 10px 10px 0;
       }
     }
   }
@@ -77,10 +78,10 @@
 
 ::-webkit-scrollbar-track {
   background: #bebdbd;
-  border-radius: 2px;
+  border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb {
   background: #888;
-  border-radius: 2px;
+  border-radius: 4px;
 }

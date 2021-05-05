@@ -1,20 +1,43 @@
 <div class="content" fxLayoutAlign="center center">
-  <mat-card fxLayout="column" fxLayoutAlign="space-between center">
-    <div class="header" fxLayoutAlign="space-between center">
+  <mat-card
+    fxLayout="column"
+    fxLayoutAlign="space-between center"
+    [ngStyle.xs]="{ 'width.vw': 100, 'height.vh': 100, 'border-radius': 0 }"
+  >
+    <div
+      class="header"
+      fxLayoutAlign="space-between center"
+      [ngStyle.xs]="{ 'padding.px': 10 }"
+    >
       <div class="name" fxLayoutAlign="space-between center">
-        <ngx-avatar name="Joshua Lugada" bgColor="#007ced"></ngx-avatar>
-        <p>Joshua Lugada</p>
+        <ngx-avatar
+          size="30"
+          name="Joshua Lugada"
+          bgColor="#007ced"
+        ></ngx-avatar>
+        <p [ngStyle.xs]="{ 'font-size.px': 16 }">Joshua Lugada</p>
       </div>
-      <div class="nav" fxLayoutAlign="space-between center">
+      <div class="nav" fxLayoutAlign="space-between center" fxHide.xs>
         <p routerLink="about-me" routerLinkActive="nav-active">About me</p>
         <p routerLink="resume" routerLinkActive="nav-active">Resume</p>
         <p routerLink="contacts" routerLinkActive="nav-active">Contact</p>
       </div>
+      <mat-icon
+        [ngStyle.xs]="{ display: 'flex' }"
+        mat-button
+        [matMenuTriggerFor]="menu"
+      >
+        more_vert
+      </mat-icon>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item routerLink="about-me">About me</button>
+        <button mat-menu-item routerLink="resume">Resume</button>
+        <button mat-menu-item routerLink="contacts">Contacts</button>
+      </mat-menu>
     </div>
     <div class="details">
       <router-outlet></router-outlet>
     </div>
-    <div class="footer" fxLayoutAlign="start center">
-    </div>
+    <div class="footer" fxLayoutAlign="start center"></div>
   </mat-card>
 </div>

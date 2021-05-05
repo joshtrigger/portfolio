@@ -1,5 +1,12 @@
-<div class="resume" fxLayoutAlign="space-between start" fxlayoutGap="40px">
-  <div class="left" fxLayout="column wrap">
+<div
+  class="resume"
+  fxLayout.xs="column"
+  fxLayoutAlign.xs="start center"
+  fxLayoutAlign="space-between start"
+  fxlayoutGap="40px"
+  [ngStyle.xs]="{ 'padding.px': 30 }"
+>
+  <div [ngStyle.xs]="{ width: 'auto' }" class="left" fxLayout="column wrap">
     <h2>WORK EXPERIENCE</h2>
     <div
       class="work-experience"
@@ -28,9 +35,12 @@
       </div>
     </div>
   </div>
-  <div class="right" fxLayout="column wrap">
+  <div [ngStyle.xs]="{ width: 'auto' }" class="right" fxLayout="column wrap">
     <h2>SKILLS</h2>
-    <div class="skills" fxLayout="row wrap" fxLayoutGap="10px">
+    <div
+      class="skills"
+      fxLayout="row wrap"
+    >
       <div
         class="skill"
         fxLayoutAlign="center center"

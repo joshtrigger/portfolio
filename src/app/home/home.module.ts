@@ -11,6 +11,7 @@ import { ResumeComponent } from './resume/resume.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { MatMenuModule } from '@angular/material/menu';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { MatIconModule } from '@angular/material/icon';
     MatCardModule,
     MatButtonModule,
     MatIconModule,
+    MatMenuModule,
   ],
 })
 export class HomeModule {}

@@ -26,8 +26,14 @@
       .name {
         p {
           font-size: 24px;
-          font-weight: 500;
+          font-weight: 400;
           margin: 0 10px;
+        }
+        @media screen and (max-width: 599px) {
+          ::ng-deep .avatar-container {
+            height: 30px;
+            width: 30px;
+          }
         }
       }
 
@@ -50,6 +56,10 @@
         .nav-active {
           color: #fff;
         }
+      }
+
+      .mat-icon{
+        display: none;
       }
     }
 
@@ -79,6 +89,16 @@
         height: 16px;
         width: 16px;
       }
+    }
+  }
+}
+
+::ng-deep .mat-menu-panel {
+  background-color: #222 !important;
+
+  .mat-menu-content {
+    button {
+      color: lightgray;
     }
   }
 }

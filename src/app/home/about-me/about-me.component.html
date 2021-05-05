@@ -1,10 +1,21 @@
-<div class="container" fxLayoutAlign="center center" fxLayoutGap="40px">
+<div
+  class="container"
+  fxLayout.xs="column wrap"
+  fxLayoutAlign.xs="center center"
+  fxLayoutAlign="center center"
+  fxLayoutGap="40px"
+>
   <div class="image" fxLayoutAlign="center center">
-    <img src="/assets/images/joshua.jpg" alt="" srcset="" />
+    <img
+      [ngStyle.xs]="{ 'width.px': 150, 'height.px': 150 }"
+      src="/assets/images/joshua.jpg"
+      alt=""
+      srcset=""
+    />
   </div>
-  <div class="info" fxLayout="column" fxLayoutAlign="space-between start">
-    <h2>Web Developer</h2>
-    <p>
+  <div class="info" [ngStyle.xs]="{ 'font-size.px': 32 }" fxLayout="column" fxLayoutAlign="space-between start">
+    <h2 [ngStyle.xs]="{ 'font-size.px': 32 }">Web Developer</h2>
+    <p [ngStyle.xs]="{ 'width.px': 260, 'font-size.px': 14 }">
       Hi, my name is Joshua. I'm a Web / Front-end Developer living in Uganda
       who is looking to master his craft as a developer. I design single page
       applications usually with Angular.

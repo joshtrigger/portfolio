@@ -1,37 +1,87 @@
-<div class="container" fxLayout="column wrap" fxLayoutAlign="space-evenly center">
-  <div class="header" fxLayout="column wrap" fxLayoutAlign="start start">
+<div
+  class="container"
+  fxLayout="column wrap"
+  fxLayoutAlign="space-evenly center"
+>
+  <div
+    class="header"
+    fxLayout="column wrap"
+    fxLayoutAlign="start start"
+    [ngStyle.xs]="{ 'padding.px': '10 32', height: 'auto' }"
+  >
     <h2>Contacts</h2>
-    <span>Let's get in touch :)</span>
+    <!-- <span>Let's get in touch :)</span> -->
   </div>
-  <div class="bottom" fxLayoutAlign="space-evenly center">
-    <div class="contacts" fxLayout="column wrap">
+  <div
+    class="bottom"
+    [ngStyle.xs]="{ 'padding.px': 10 }"
+    fxLayout.xs="column wrap"
+    fxLayoutAlign.xs="space-evenly center"
+    fxLayoutAlign="space-evenly center"
+  >
+    <div
+      [ngStyle.xs]="{ 'width.px': 252 }"
+      class="contacts"
+      fxLayout="column wrap"
+    >
       <div class="contact" fxLayoutAlign="start center">
-        <mat-icon>email</mat-icon>
-        <span>lugjosh@gmail.com</span>
+        <mat-icon
+          [ngStyle.xs]="{ 'width.px': 18, 'height.px': 18, 'font-size.px': 18 }"
+          >email</mat-icon
+        >
+        <span [ngStyle.xs]="{ 'font-size.px': 14 }">lugjosh@gmail.com</span>
       </div>
       <div class="contact" fxLayoutAlign="start center">
-        <mat-icon>phone</mat-icon>
-        <span>+(256) 703 720 473</span>
+        <mat-icon
+          [ngStyle.xs]="{ 'width.px': 18, 'height.px': 18, 'font-size.px': 18 }"
+          >phone</mat-icon
+        >
+        <span [ngStyle.xs]="{ 'font-size.px': 14 }">+(256) 703 720 473</span>
       </div>
       <div class="contact" fxLayoutAlign="start center">
-        <mat-icon>location_on</mat-icon>
-        <span>Kampala, Uganda</span>
+        <mat-icon
+          [ngStyle.xs]="{ 'width.px': 18, 'height.px': 18, 'font-size.px': 18 }"
+          >location_on</mat-icon
+        >
+        <span [ngStyle.xs]="{ 'font-size.px': 14 }">Kampala, Uganda</span>
       </div>
     </div>
-    <div class="contacts" fxLayout="column wrap">
+    <div
+      [ngStyle.xs]="{ 'width.px': 252 }"
+      class="contacts"
+      fxLayout="column wrap"
+    >
       <div class="contact" fxLayoutAlign="start center">
-        <img src="/assets/images/github.png" alt="" srcset="">
-        <span>github.com/joshtrigger</span>
+        <img
+          [ngStyle.xs]="{ 'width.px': 18, 'height.px': 18 }"
+          src="/assets/images/github.png"
+          alt=""
+          srcset=""
+        />
+        <span [ngStyle.xs]="{ 'font-size.px': 14 }"
+          >github.com/joshtrigger</span
+        >
       </div>
       <div class="contact" fxLayoutAlign="start center">
-        <img src="/assets/images/linkedin.png" alt="" srcset="">
-        <span>linkedin.com/in/joshua-lugada-67a31016a/</span>
+        <img
+          [ngStyle.xs]="{ 'width.px': 18, 'height.px': 18 }"
+          src="/assets/images/linkedin.png"
+          alt=""
+          srcset=""
+        />
+        <span [ngStyle.xs]="{ 'font-size.px': 14 }"
+          >linkedin.com/in/joshua-lugada-67a31016a/</span
+        >
       </div>
       <div class="contact" fxLayoutAlign="start center">
-        <img src="/assets/images/medium.png" alt="" srcset="">
-        <span>medium.com/@lugjosh</span>
+        <img
+          [ngStyle.xs]="{ 'width.px': 18, 'height.px': 18 }"
+          src="/assets/images/medium.png"
+          alt=""
+          srcset=""
+        />
+        <span [ngStyle.xs]="{ 'font-size.px': 14 }">medium.com/@lugjosh</span>
       </div>
     </div>
   </div>
-
 </div>
