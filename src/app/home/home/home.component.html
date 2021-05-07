@@ -12,15 +12,16 @@
       <div class="name" fxLayoutAlign="space-between center">
         <ngx-avatar
           size="30"
+          textSizeRatio="2"
           name="Joshua Lugada"
           bgColor="#007ced"
         ></ngx-avatar>
         <p [ngStyle.xs]="{ 'font-size.px': 16 }">Joshua Lugada</p>
       </div>
-      <div class="nav" fxLayoutAlign="space-between center" fxHide.xs>
+      <div class="nav" fxLayoutAlign="space-between center" fxLayoutGap="50px" fxHide.xs>
         <p routerLink="about-me" routerLinkActive="nav-active">About me</p>
         <p routerLink="resume" routerLinkActive="nav-active">Resume</p>
-        <p routerLink="contacts" routerLinkActive="nav-active">Contact</p>
+        <p routerLink="contacts" routerLinkActive="nav-active">Contacts</p>
       </div>
       <mat-icon
         [ngStyle.xs]="{ display: 'flex' }"

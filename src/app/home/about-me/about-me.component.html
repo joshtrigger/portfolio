@@ -13,12 +13,18 @@
       srcset=""
     />
   </div>
-  <div class="info" [ngStyle.xs]="{ 'font-size.px': 32 }" fxLayout="column" fxLayoutAlign="space-between start">
+  <div
+    class="info"
+    [ngStyle.xs]="{ 'font-size.px': 32 }"
+    fxLayout="column"
+    fxLayoutAlign="space-between start"
+  >
     <h2 [ngStyle.xs]="{ 'font-size.px': 32 }">Web Developer</h2>
     <p [ngStyle.xs]="{ 'width.px': 260, 'font-size.px': 14 }">
-      Hi, my name is Joshua. I'm a Web / Front-end Developer living in Uganda
-      who is looking to master his craft as a developer. I design single page
-      applications usually with Angular.
+      Hello there, my name is Joshua, a web developer with
+      {{ today - startYear }} years of experience in designing and developing
+      user interfaces, testing, debugging, and training aspiring web developers.
+      I also write blog posts every once in a while :)
     </p>
     <div class="btns" fxLayoutAlign="space-between start" fxLayoutGap="20px">
       <button id="cv" mat-flat-button>Download CV</button>
